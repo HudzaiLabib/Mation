@@ -12,6 +12,14 @@
          rel="stylesheet"
       />
 
+      <script src="include/js/jquery-3.0.0.js"></script>
+
+      <script
+         src="include/components/footer.js"
+         type="text/javascript"
+         defer
+      ></script>
+
       <!-- Bootstrap CSS -->
       <link
          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -20,31 +28,31 @@
          crossorigin="anonymous"
       />
       <style>
-         .banner-image {
-            background-image: url("assets/BG-Hero.png");
+         .jumbotron-home {
+            background-image: url("assets/home/bg-header-min.webp");
             background-size: cover;
          }
 
          .bg-sand {
-            background-image: url("assets/sand-glass.png");
+            background-image: url("assets/home/bg-sand-min.webp");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom center;
          }
 
          .bg-card {
-            background-image: url("assets/bg-card.png");
+            background-image: url("assets/home/bg-card-min.webp");
             background-size: cover;
          }
 
          .bg-beach {
-            background-image: url("assets/beach.png");
+            background-image: url("assets/home/bg-beach-min.webp");
             background-size: cover;
             background-attachment: fixed;
          }
 
-         .bg-tree-ornament-1 {
-            background-image: url("assets/tree-ornament-1.png");
+         .bg-tree-1 {
+            background-image: url("assets/home/tree-ornament-1-min.webp");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center right;
@@ -54,13 +62,13 @@
          }
 
          .bg-subs {
-            background-image: url("assets/vit-sea.png");
+            background-image: url("assets/home/subscribe-laut-min.webp");
             background-size: cover;
             /* background-attachment: fixed; */
          }
 
          .bg-footer-index {
-            background-image: url("assets/before-footer.png");
+            background-image: url("assets/home/bg-bibir-pantai-min.webp");
             background-size: cover;
             background-position: bottom;
             height: 60vh;
@@ -98,54 +106,55 @@
    </head>
    <body>
       <!-- Navbar  -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-         <div class="container">
-            <a
-               class="navbar-brand"
-               href="#"
-               style="font-family: Sarina; font-size: 40px"
-               >Beras Basah</a
-            >
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNav"
-               aria-controls="navbarNav"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <div class="mx-auto"></div>
-               <ul class="navbar-nav">
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Virtual Tour</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Akomodasi</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#"
-                        >Rencana Perjalanan</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Guide</a>
-                  </li>
-               </ul>
+      <header>
+         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="container">
+               <a
+                  class="navbar-brand"
+                  href=""
+                  style="font-family: Sarina; font-size: 40px"
+                  >Beras Basah</a
+               >
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="mx-auto"></div>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="virtual-tour.html">Virtual Tour</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="akomodasi.html">Akomodasi</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="rencana-perjalanan.html"
+                           >Rencana Perjalanan</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="guide.html">Guide</a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-         </div>
-      </nav>
+         </nav>
+      </header>
 
       <!-- Banner Image  -->
       <div
-         class="banner-image w-100 d-flex flex-column justify-content-center align-items-center"
+         class="jumbotron-home w-100 d-flex flex-column justify-content-center align-items-center"
       >
          <div
             class="container d-flex align-items-center justify-content-between pt-5"
@@ -165,7 +174,7 @@
             <div class="my-5">
                <img
                   width="90%"
-                  src="assets/unsplash.png"
+                  src="assets/home/header-pantai-min.webp"
                   alt="suasana pantai"
                />
             </div>
@@ -174,9 +183,9 @@
             class="container d-flex align-items-center justify-content-between"
          >
             <div class="d-flex gap-3">
-               <a href=""><img src="assets/icon-fb.png" alt="" /></a>
-               <a href=""><img src="assets/icon-ig.png" alt="" /></a>
-               <a href=""><img src="assets/icon-tiktok.png" alt="" /></a>
+               <a href=""><img src="assets/icon/icon-fb.png" alt="" /></a>
+               <a href=""><img src="assets/icon/icon-ig.png" alt="" /></a>
+               <a href=""><img src="assets/icon/icon-tiktok.png" alt="" /></a>
             </div>
             <div class="mt-3">
                <p class="text-white fs-5 border-top border-3 border-white">
@@ -324,11 +333,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/home/akomodasi-hotel-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Hotel
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Berbagai penginapan disekitar pelabuhan...
                      </p>
                   </div>
                </div>
@@ -336,11 +347,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/home/akomodasi-wahana-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Wahana
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Wisata pulau dan laut yang menyenagkan...
                      </p>
                   </div>
                </div>
@@ -348,11 +361,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/home/akomodasi-restaurant-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Restaurant
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Masakan lokal yang tidak kalah unik deng...
                      </p>
                   </div>
                </div>
@@ -404,7 +419,7 @@
 
       <!-- Testimoni -->
       <div
-         class="bg-tree-ornament-1 d-flex align-items-end justify-content-center w-100"
+         class="bg-tree-1 d-flex align-items-end justify-content-center w-100"
       >
          <div class="container d-grid gap-5">
             <h2 class="fs-1 fw-bold">Apa Kata Mereka?</h2>
@@ -426,7 +441,7 @@
                      <img
                         width="40px"
                         height="40px"
-                        src="assets/kemal-apa.png"
+                        src="assets/home/kemal-apa.png"
                         alt=""
                      />
                      <p class="card-text text-white">Kemal Warni</p>
@@ -450,7 +465,7 @@
                      <img
                         width="40px"
                         height="40px"
-                        src="assets/josh-apa.png"
+                        src="assets/home/josh-apa.png"
                         alt=""
                      />
                      <p class="card-text text-white">Josh Long Journey</p>
@@ -473,7 +488,7 @@
                      <img
                         width="40px"
                         height="40px"
-                        src="assets/kemal-apa.png"
+                        src="assets/home/kemal-apa.png"
                         alt=""
                      />
                      <p class="card-text text-white">Marcele Adeline</p>
@@ -487,22 +502,7 @@
          class="bg-footer-index d-flex align-items-center justify-content-center w-100"
       ></div>
 
-      <footer style="background-color: #0172CB;" class="">
-         <div
-            class="container d-flex align-items-center justify-content-between"
-         >
-         <div class="pt-3">
-            <p class="text-white fs-5">
-               Copyright © 2022 Tim P1
-            </p>
-         </div>
-         <div class="d-flex gap-3">
-               <a href=""><img width="15px" height="24px" src="assets/icon-fb.png" alt="" /></a>
-               <a href=""><img width="24px" height="24px" src="assets/icon-ig.png" alt="" /></a>
-               <a href=""><img width="24px" height="24px" src="assets/icon-tiktok.png" alt="" /></a>
-            </div>
-         </div>
-      </footer>
+      <footer-component></footer-component>
 
       <script
          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

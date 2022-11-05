@@ -12,6 +12,20 @@
          rel="stylesheet"
       />
 
+      <script src="include/js/jquery-3.0.0.js"></script>
+
+      <script
+         src="include/components/header.js"
+         type="text/javascript"
+         defer
+      ></script>
+
+      <script
+         src="include/components/footer.js"
+         type="text/javascript"
+         defer
+      ></script>
+
       <!-- Bootstrap CSS -->
       <link
          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -22,15 +36,15 @@
 
       <style>
          .bg-tree-2 {
-            background-image: url("assets/tree-ornament2.png");
-            background-size: inherit;
+            background-image: url("assets/about/tree-ornament-2-min.webp");
+            background-size: contain;
             background-repeat: no-repeat;
             background-position: top right;
             /* background-attachment: fixed; */
          }
 
          .bg-tree-3 {
-            background-image: url("assets/tree-ornament3.png");
+            background-image: url("assets/about/tree-ornament-3-min.webp");
             background-size: inherit;
             background-repeat: no-repeat;
             background-position: top left;
@@ -41,8 +55,8 @@
             letter-spacing: 0.3em;
          }
 
-         .bg-bfooter {
-            background-image: url("assets/bg-jembatan-footer.png");
+         .bg-footer-about {
+            background-image: url("assets/about/bg-jembatan-footer-min.webp");
             background-size: cover;
             background-position: bottom center;
             /* background-attachment: fixed; */
@@ -54,77 +68,34 @@
    </head>
    <body>
       <!-- Navbar  -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-md-3">
-         <div class="container">
-            <a
-               class="navbar-brand"
-               href="#"
-               style="font-family: Sarina; font-size: 40px"
-               >Beras Basah</a
-            >
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNav"
-               aria-controls="navbarNav"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <div class="mx-auto"></div>
-               <ul class="navbar-nav">
-                  <li class="nav-item">
-                     <a class="nav-link text-dark" href="#">Virtual Tour</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-dark" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-dark" href="#">Akomodasi</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-dark" href="#"
-                        >Rencana Perjalanan</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-dark" href="#">Guide</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
+      <header-component></header-component>
 
       <!-- About -->
       <div
          class="bg-tree-2 d-flex justify-content-center w-100"
-         style="height: 90vh"
+         style="height: 70vh"
       >
          <div class="container">
             <h1 class="my-5 text-center title">Pantai Beras Basah</h1>
-            <div class="mt-5 ps-5">
+            <div class="mt-5 ps-5 fs-5">
                <p>
                   Akses Keindahan Pantai Beras Basah Dari Bontang perjalanan
-                  dilanjutkan menuju ke arah Bontang Kuala <br />
+                  dilanjutkan menuju ke arah Bontang <br> Kuala 
                   atau Pelabuhan Tanjung Laut. Dari Pantai Beras Basah berjarak
-                  sekitar 220 kilometer dari pusat kota Balikpapan. <br />
+                  sekitar 220 kilometer dari <br> pusat kota Balikpapan.
                   Anda bisa mencapai tempat ini dari Balikpapan.
                </p>
                <p>
                   Dari pusat kota Balikpapan, Anda bisa langsung menuju ke
-                  Bontang dengan menggunakan kendaraan pribadi <br />
+                  Bontang dengan menggunakan <br> kendaraan pribadi 
                   maupun bus AC yang menuju ke arah Bontang dengan biaya naik
-                  bus sekitar Rp 100.000.
+                  bus <br> sekitar Rp 100.000.
                </p>
                <p>
                   Dari pelabuhan atau dermaga ini, Anda bisa naik kapal yang
-                  menuju ke arah Pulau Beras Basah dengan <br />
+                  menuju ke arah Pulau Beras Basah <br> dengan 
                   biaya sekitar Rp 40.000 per orang atau menyewa satu kapal yang
-                  berkapasitas sepuluh orang dengan <br />
+                  berkapasitas 10 orang <br> dengan 
                   biaya sewa sekitar Rp 400.000 hingga Rp 500.000 (PP) per
                   kapal.
                </p>
@@ -135,7 +106,7 @@
       <!-- Maps -->
       <div
          class="bg-tree-3 d-flex justify-content-center w-100"
-         style="height: 90vh"
+         style="height: 620px;"
       >
          <div class="" style="padding-left: 0.7em">
             <h1 class="my-5 text-left">Lokasi Wisata</h1>
@@ -156,19 +127,19 @@
             class="d-flex flex-column justify-content-center align-items-center gap-5 m-3"
          >
             <img
-               src="assets/Facebook.png"
+               src="assets/about/Facebook.png"
                alt=""
                width="64px"
                height="64px"
                class="d-flex"
             /><img
-               src="assets/Instagram.png"
+               src="assets/about/Instagram.png"
                alt=""
                width="64px"
                height="64px"
                class="d-flex"
             /><img
-               src="assets/TikTok.png"
+               src="assets/about/TikTok.png"
                alt=""
                width="64px"
                height="64px"
@@ -184,18 +155,18 @@
          <div class="">
             <h1 class="mb-5">Gallery</h1>
             <div class="d-flex justify-content-center align-items-center gap-3">
-               <img width="250px" src="assets/beach-overview.png" alt="" />
-               <img width="250px" src="assets/beach-overview-1.png" alt="" />
-               <img width="250px" src="assets/beach-overview-2.png" alt="" />
+               <img width="250px" src="assets/about/beach-overview-min.webp" alt="" />
+               <img width="250px" src="assets/about/beach-overview-1-min.webp" alt="" />
+               <img width="250px" src="assets/about/beach-overview-2-min.webp" alt="" />
             </div>
             <div class="my-3 d-flex justify-content-center align-items-center">
-               <img width="780px" src="assets/beach-overview-3.png" alt="" />
+               <img width="780px" src="assets/about/beach-overview-3-min.webp" alt="" />
             </div>
          </div>
       </div>
 
       <!-- Video Profile -->
-      <div class="mt-5 bg-bfooter d-flex align-items-center justify-content-center vh-100 w-100">
+      <div class="mt-5 bg-footer-about d-flex align-items-center justify-content-center vh-100 w-100">
          <iframe
          style="margin-top: -200px;"
             width="60%"
@@ -208,6 +179,7 @@
          ></iframe>
       </div>
 
+      <footer-component></footer-component>
       <script
          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

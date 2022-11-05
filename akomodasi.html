@@ -12,6 +12,14 @@
          rel="stylesheet"
       />
 
+      <script src="include/js/jquery-3.0.0.js"></script>
+
+      <script
+         src="include/components/footer.js"
+         type="text/javascript"
+         defer
+      ></script>
+
       <!-- Bootstrap CSS -->
       <link
          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -22,7 +30,7 @@
 
       <style>
          .banner-image {
-            background-image: url("assets/jumbotron-akomodasi.png");
+            background-image: url("assets/akomodasi/bg-snorkling-min.webp");
             background-size: cover;
          }
 
@@ -35,15 +43,15 @@
          }
 
          .bg-restaurant-pantai {
-            background-image: url("assets/restaurant-pantai.png");
+            background-image: url("assets/akomodasi/restaurant-pantai-min.webp");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: top right;
             /* background-attachment: fixed; */
          }
 
-         .bg-bfooter {
-            background-image: url("assets/bibir-pantai-footer.png");
+         .bg-footer-akomodasi {
+            background-image: url("assets/akomodasi/bibir-pantai-footer-min.webp");
             background-size: cover;
             background-position: bottom center;
             /* background-attachment: fixed; */
@@ -57,7 +65,7 @@
          <div class="container">
             <a
                class="navbar-brand"
-               href="#"
+               href="index.html"
                style="font-family: Sarina; font-size: 40px"
                >Beras Basah</a
             >
@@ -77,21 +85,21 @@
                <div class="mx-auto"></div>
                <ul class="navbar-nav">
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Virtual Tour</a>
+                     <a class="nav-link text-white" href="virtual-tour.html">Virtual Tour</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#">About</a>
+                     <a class="nav-link text-white" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Akomodasi</a>
+                     <a class="nav-link text-white" href="akomodasi.html">Akomodasi</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#"
+                     <a class="nav-link text-white" href="rencana-perjalanan.html"
                         >Rencana Perjalanan</a
                      >
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Guide</a>
+                     <a class="nav-link text-white" href="guide.html">Guide</a>
                   </li>
                </ul>
             </div>
@@ -129,12 +137,12 @@
             <img
                class="ms-5"
                width="450px"
-               src="assets/kapal-bibir-pantai.png"
+               src="assets/akomodasi/kapal-bibir-pantai-min.webp"
                alt=""
             />
          </div>
          <div class="my-4">
-            <img width="1115px" src="assets/resort.png" alt="" />
+            <img width="1115px" src="assets/akomodasi/resort-min.webp" alt="" />
          </div>
       </div>
 
@@ -179,34 +187,24 @@
             sana.
          </p>
       </div>
-      <!-- <div
-         class="mt-5 bg-bfooter d-flex justify-content-center vh-100 w-100"
-      >
-         <div class="container my-5">
-            <h1>Wisata Beras Basah</h1>
-            <p class="fs-4 text-justify">
-               Pengunjung akan disambut indahnya laut biru ketika menuju Pulau Beras Basah dengan kapal. Airnya yang jernih membuat pengunjung dapat melihat dasar laut yang ditutupi tumbuhan-tumbuhan hijau. Sesekali terlihat ikan-ikan kecil yang berenang-renang di bawah sana.
 
-            </p>
-         </div>
-      </div> -->
-
-      <!-- <div class="bg-sand vh-100 w-100 pt-2"> -->
       <div
-         class="bg-bfooter d-flex justify-content-center vh-100 w-100"
+         class="bg-footer-akomodasi d-flex justify-content-center vh-100 w-100"
          style="margin-top: -150px;"
       >   
          <div class="container d-grid gap-5">
-            <div class="d-flex gap-5">
+            <div class="d-flex justify-content-center gap-5">
                <div
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/akomodasi/wisata-pulau-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Menikmati Alam Pulau
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Berbagai penginapan disekitar pelabuhan...
                      </p>
                   </div>
                </div>
@@ -214,11 +212,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/akomodasi/wisata-wahana-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Wahana Permainan
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Wisata pulau dan laut yang menyenagkan...
                      </p>
                   </div>
                </div>
@@ -226,17 +226,21 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/akomodasi/wisata-penyu-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Menyelam Di Pulau Beras Basah
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Masakan lokal yang tidak kalah unik deng...
                      </p>
                   </div>
                </div>
             </div>
          </div>
       </div>
+
+      <footer-component></footer-component>
 
       <script
          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
