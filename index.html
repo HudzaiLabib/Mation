@@ -12,6 +12,14 @@
          rel="stylesheet"
       />
 
+      <script src="include/js/jquery-3.0.0.js"></script>
+
+      <script
+         src="include/components/footer.js"
+         type="text/javascript"
+         defer
+      ></script>
+
       <!-- Bootstrap CSS -->
       <link
          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -20,129 +28,174 @@
          crossorigin="anonymous"
       />
       <style>
-         .banner-image {
-            background-image: url("assets/BG-Hero.png");
+         .jumbotron-home {
+            background-image: url("assets/home/bg-header-min.webp");
             background-size: cover;
          }
 
          .bg-sand {
-            background-image: url("assets/sand-glass.png");
+            background-image: url("assets/home/bg-sand-min.webp");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom center;
          }
 
          .bg-card {
-            background-image: url("assets/bg-card.png");
+            background-image: url("assets/home/bg-card-min.webp");
             background-size: cover;
          }
 
          .bg-beach {
-            background-image: url("assets/beach.png");
+            background-image: url("assets/home/bg-beach-min.webp");
             background-size: cover;
             background-attachment: fixed;
-
          }
 
-         /* .bg-custom-shape {
-            background-image: url("assets/custom-shape.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: top right;
-         } */
-
-         .bg-custom-shape-only {
-            background-image: url("assets/custom-shape-only.png");
+         .bg-tree-1 {
+            background-image: url("assets/home/tree-ornament-1-min.webp");
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: top right;
+            background-position: center right;
+            height: 800px;
+            /* margin-top: 150px; */
             /* background-attachment: fixed; */
-
          }
 
          .bg-subs {
-            background-image: url("assets/vit-sea.png");
+            background-image: url("assets/home/subscribe-laut-min.webp");
             background-size: cover;
             /* background-attachment: fixed; */
-
          }
 
-         .bg-bfooter {
-            background-image: url("assets/before-footer.png");
+         .bg-footer-index {
+            background-image: url("assets/home/bg-bibir-pantai-min.webp");
             background-size: cover;
+            background-position: bottom;
+            height: 60vh;
             /* background-attachment: fixed; */
+         }
 
+         .bg-blue-date {
+            background-color: #00a0de;
+         }
+
+         .span-date {
+            width: 60px !important;
+            height: 45px;
+            line-height: 40px;
+            text-align: center;
+            flex-shrink: 0;
+         }
+
+         #event:hover {
+            background-color: #d3f1f9 !important;
+         }
+
+         #testimoni {
+            /* line-height: 100px; */
+            background-color: #f8f8f8;
+            text-align: center;
+            font-size: 24px;
+         }
+
+         #profile {
+            height: 100px;
          }
       </style>
       <title>Pantai Beras Basah</title>
    </head>
    <body>
       <!-- Navbar  -->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-         <div class="container">
-            <a
-               class="navbar-brand"
-               href="#"
-               style="font-family: Sarina; font-size: 40px"
-               >Beras Basah</a
-            >
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNav"
-               aria-controls="navbarNav"
-               aria-expanded="false"
-               aria-label="Toggle navigation"
-            >
-               <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <div class="mx-auto"></div>
-               <ul class="navbar-nav">
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Virtual Tour</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Akomodasi</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#"
-                        >Rencana Perjalanan</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link text-white" href="#">Guide</a>
-                  </li>
-               </ul>
+      <header>
+         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="container">
+               <a
+                  class="navbar-brand"
+                  href=""
+                  style="font-family: Sarina; font-size: 40px"
+                  >Beras Basah</a
+               >
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <div class="mx-auto"></div>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="virtual-tour.html">Virtual Tour</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="akomodasi.html">Akomodasi</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="rencana-perjalanan.html"
+                           >Rencana Perjalanan</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-white" href="guide.html">Guide</a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-         </div>
-      </nav>
+         </nav>
+      </header>
 
       <!-- Banner Image  -->
-      <div class="banner-image w-100 vh-100 d-flex align-items-center">
-         <div class="content d-flex align-items-center p-2">
-            <div class="container mx-5 my-5">
-               <h1 class="text-white">Ayo ! Liburan di Beras Basah</h1>
+      <div
+         class="jumbotron-home w-100 d-flex flex-column justify-content-center align-items-center"
+      >
+         <div
+            class="container d-flex align-items-center justify-content-between pt-5"
+         >
+            <div class="d-grid gap-3 my-5">
+               <h1 class="text-white fw-bold">Ayo ! Liburan di Beras Basah</h1>
                <h5 class="text-white">
                   Nikmati momen liburan besama Keluarga, teman, dan orang
                   terdekat di Pulau Beras Basah
                </h5>
-               <button type="button" class="btn btn-outline-light">
-                  Selengkapnya
-               </button>
+               <div class="my-3">
+                  <a class="btn btn-outline-light flex-grow-0">
+                     Selengkapnya
+                  </a>
+               </div>
             </div>
-            <div class="container my-5">
-               <img src="assets/unsplash.png" alt="suasana pantai" />
+            <div class="my-5">
+               <img
+                  width="90%"
+                  src="assets/home/header-pantai-min.webp"
+                  alt="suasana pantai"
+               />
+            </div>
+         </div>
+         <div
+            class="container d-flex align-items-center justify-content-between"
+         >
+            <div class="d-flex gap-3">
+               <a href=""><img src="assets/icon/icon-fb.png" alt="" /></a>
+               <a href=""><img src="assets/icon/icon-ig.png" alt="" /></a>
+               <a href=""><img src="assets/icon/icon-tiktok.png" alt="" /></a>
+            </div>
+            <div class="mt-3">
+               <p class="text-white fs-5 border-top border-3 border-white">
+                  05/10/2022
+               </p>
             </div>
          </div>
       </div>
 
-      <!-- Main Content Area -->
+      <!-- Event -->
       <div class="container my-5 d-grid gap-5">
          <h2 class="fs-1 fw-bold">Event 2022</h2>
          <div class="d-flex justify-content-center gap-5">
@@ -158,40 +211,45 @@
                   </h5>
                   <div class="d-grid gap-3 mt-3">
                      <div
+                        id="event"
                         class="bg-white d-flex p-2 rounded gap-1 align-items-center"
                      >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
+                        <span
+                           class="span-date bg-blue-date text-white py-1 px-2 rounded"
+                        >
+                           1-3
+                        </span>
                         <div class="bg-transparent text-wrap">
                            Live Music with band performance
                         </div>
                      </div>
                      <div
+                        id="event"
                         class="bg-white d-flex p-2 rounded gap-1 align-items-center"
                      >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
+                        <span
+                           class="span-date bg-blue-date text-white py-1 px-2 rounded"
+                        >
+                           11-13
+                        </span>
                         <div class="bg-transparent text-wrap">
-                           Live Music with band performance
+                           Festival Lampion Mataraman Bersama warga
                         </div>
                      </div>
                      <div
+                        id="event"
                         class="bg-white d-flex p-2 rounded gap-1 align-items-center"
                      >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
+                        <div
+                           class="span-date bg-blue-date text-white py-1 px-2 rounded"
+                        >
+                           21-22
                         </div>
                         <div class="bg-transparent text-wrap">
-                           Live Music with band performance
+                           Pertunjukkan tari daerah Kalimantan Timur
                         </div>
                      </div>
                   </div>
-                  <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                  <!-- <a href="#" class="card-link">Card link</a> -->
-                  <!-- <a href="#" class="card-link">Another link</a> -->
                </div>
             </div>
             <div
@@ -200,46 +258,26 @@
             >
                <div class="card-body bg-card rounded">
                   <h5
-                     class="card-title fs-3 text-white text-center bg-primary p-2 rounded-3"
+                     style="opacity: 0.7"
+                     class="card-title fs-3 text-center bg-white p-2 rounded-3"
                   >
-                     September
+                     Oktober
                   </h5>
                   <div class="d-grid gap-3 mt-3">
                      <div
+                        id="event"
                         class="bg-white d-flex p-2 rounded gap-1 align-items-center"
                      >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
+                        <span
+                           class="span-date bg-blue-date text-white py-1 px-2 rounded"
+                        >
+                           1-3
+                        </span>
                         <div class="bg-transparent text-wrap">
-                           Live Music with band performance
-                        </div>
-                     </div>
-                     <div
-                        class="bg-white d-flex p-2 rounded gap-1 align-items-center"
-                     >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
-                        <div class="bg-transparent text-wrap">
-                           Live Music with band performance
-                        </div>
-                     </div>
-                     <div
-                        class="bg-white d-flex p-2 rounded gap-1 align-items-center"
-                     >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
-                        <div class="bg-transparent text-wrap">
-                           Live Music with band performance
+                           Festival air memperingati hari laut
                         </div>
                      </div>
                   </div>
-                  <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                  <!-- <a href="#" class="card-link">Card link</a> -->
-                  <!-- <a href="#" class="card-link">Another link</a> -->
                </div>
             </div>
             <div
@@ -248,90 +286,42 @@
             >
                <div class="card-body bg-card rounded">
                   <h5
-                     class="card-title fs-3 text-white text-center bg-primary p-2 rounded-3"
+                     style="opacity: 0.7"
+                     class="card-title fs-3 text-center bg-white p-2 rounded-3"
                   >
-                     September
+                     November
                   </h5>
                   <div class="d-grid gap-3 mt-3">
                      <div
+                        id="event"
                         class="bg-white d-flex p-2 rounded gap-1 align-items-center"
                      >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
+                        <span
+                           class="span-date bg-blue-date text-white py-1 px-2 rounded"
+                        >
+                           1-3
+                        </span>
                         <div class="bg-transparent text-wrap">
-                           Live Music with band performance
+                           Festival memancing bersama warga lokal
                         </div>
                      </div>
                      <div
+                        id="event"
                         class="bg-white d-flex p-2 rounded gap-1 align-items-center"
                      >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
+                        <span
+                           class="span-date bg-blue-date text-white py-1 px-2 rounded"
+                        >
+                           11-13
+                        </span>
                         <div class="bg-transparent text-wrap">
-                           Live Music with band performance
-                        </div>
-                     </div>
-                     <div
-                        class="bg-white d-flex p-2 rounded gap-1 align-items-center"
-                     >
-                        <div class="bg-info text-white py-1 px-2 rounded">
-                           11-3
-                        </div>
-                        <div class="bg-transparent text-wrap">
-                           Live Music with band performance
+                           Festival apung dan expo kerajinan daerah
                         </div>
                      </div>
                   </div>
-                  <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                  <!-- <a href="#" class="card-link">Card link</a> -->
-                  <!-- <a href="#" class="card-link">Another link</a> -->
                </div>
             </div>
          </div>
-
-         <!-- <div class="p-5 border">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Necessitatibus veniam ipsa earum quibusdam, atque ipsum error
-               maiores natus iusto fugit id saepe neque rerum magni laudantium
-               accusantium dolorem numquam quasi.
-            </p>
-         </div>
-         <div class="p-5 border">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Necessitatibus veniam ipsa earum quibusdam, atque ipsum error
-               maiores natus iusto fugit id saepe neque rerum magni laudantium
-               accusantium dolorem numquam quasi.
-            </p>
-         </div>
-         <div class="p-5 border">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Necessitatibus veniam ipsa earum quibusdam, atque ipsum error
-               maiores natus iusto fugit id saepe neque rerum magni laudantium
-               accusantium dolorem numquam quasi.
-            </p>
-         </div>
-         <div class="p-5 border">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Necessitatibus veniam ipsa earum quibusdam, atque ipsum error
-               maiores natus iusto fugit id saepe neque rerum magni laudantium
-               accusantium dolorem numquam quasi.
-            </p>
-         </div>
-         <div class="p-5 border">
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Necessitatibus veniam ipsa earum quibusdam, atque ipsum error
-               maiores natus iusto fugit id saepe neque rerum magni laudantium
-               accusantium dolorem numquam quasi. df
-            </p>
-         </div> -->
       </div>
 
       <!-- Akomodasi & Wahana -->
@@ -343,11 +333,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/home/akomodasi-hotel-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Hotel
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Berbagai penginapan disekitar pelabuhan...
                      </p>
                   </div>
                </div>
@@ -355,11 +347,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/home/akomodasi-wahana-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Wahana
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Wisata pulau dan laut yang menyenagkan...
                      </p>
                   </div>
                </div>
@@ -367,11 +361,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/hotel.png" class="card-img-top" alt="..." />
+                  <img src="assets/home/akomodasi-restaurant-min.webp" class="card-img-top" alt="..." />
                   <div class="card-body">
+                     <p class="card-text fs-4 fw-bold">
+                        Restaurant
+                     </p>
                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
+                        Masakan lokal yang tidak kalah unik deng...
                      </p>
                   </div>
                </div>
@@ -379,7 +375,10 @@
          </div>
       </div>
 
-      <div class="bg-beach d-flex align-items-center justify-content-center vh-100 w-100">
+      <!-- Video Profile -->
+      <div
+         class="bg-beach d-flex align-items-center justify-content-center vh-100 w-100"
+      >
          <iframe
             width="70%"
             height="70%"
@@ -391,50 +390,119 @@
          ></iframe>
       </div>
 
-      <div class="bg-white d-flex align-items-center justify-content-center w-100">
-         <div class="bg-subs p-5 m-5 rounded-3" style="width: 60%; height: auto; margin-top: 150px !important;">
-            <p class="fs-1 fw-bold text-white text-center">Dapatkan Informasi Terkini dengan Berlangganan</p>
+      <!-- Subscribe -->
+      <div
+         class="bg-white d-flex align-items-center justify-content-center w-100"
+      >
+         <div
+            class="bg-subs p-5 m-5 rounded-3"
+            style="width: 60%; height: auto; margin-top: 150px !important"
+         >
+            <p class="fs-1 fw-bold text-white text-center">
+               Dapatkan Informasi Terkini dengan Berlangganan
+            </p>
             <div class="d-flex justify-content-center gap-5">
-               <input class="p-3 rounded-3 border-0" style="width: 70%;" placeholder="Enter your email..." type="email" name="email" id="email"/>
-               <button class="btn btn-info text-white rounded-3" type="button">Berlangganan</button>
+               <input
+                  class="p-3 rounded-3 border-0"
+                  style="width: 70%"
+                  placeholder="Enter your email..."
+                  type="email"
+                  name="email"
+                  id="email"
+               />
+               <button class="btn btn-info text-white rounded-3" type="button">
+                  Berlangganan
+               </button>
             </div>
          </div>
       </div>
 
-      <div class="bg-custom-shape-only d-flex align-items-center justify-content-center vh-100 w-100">
-         <iframe
-            width="60%"
-            height="60%"
-            src="https://www.youtube-nocookie.com/embed/imaT5t1YSVI?start=9"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-         ></iframe>
+      <!-- Testimoni -->
+      <div
+         class="bg-tree-1 d-flex align-items-end justify-content-center w-100"
+      >
+         <div class="container d-grid gap-5">
+            <h2 class="fs-1 fw-bold">Apa Kata Mereka?</h2>
+            <div class="d-flex justify-content-start gap-5">
+               <div
+                  class="card rounded-3"
+                  style="width: 20rem; max-width: 398px; height: 381px"
+               >
+                  <span
+                     id="testimoni"
+                     class="p-4 d-flex flex-grow-1 align-items-center"
+                     >“ Pantainya keren dan bersih banyak hewan -hewan kecil
+                     seperti bintang laut, kerang, dll ”</span
+                  >
+                  <div
+                     id="profile"
+                     class="card-body bg-blue-date flex-grow-0 d-flex justify-content-start align-items-center gap-2"
+                  >
+                     <img
+                        width="40px"
+                        height="40px"
+                        src="assets/home/kemal-apa.png"
+                        alt=""
+                     />
+                     <p class="card-text text-white">Kemal Warni</p>
+                  </div>
+               </div>
+               <div
+                  class="card rounded-3"
+                  style="width: 20rem; max-width: 398px; height: 381px"
+               >
+                  <span
+                     id="testimoni"
+                     class="p-4 d-flex flex-grow-1 align-items-center"
+                  >
+                     “ Kalo ke sini jadi inget masa SMA, waktu liburan sekolah.
+                     ”</span
+                  >
+                  <div
+                     id="profile"
+                     class="card-body bg-blue-date flex-grow-0 d-flex justify-content-start align-items-center gap-2"
+                  >
+                     <img
+                        width="40px"
+                        height="40px"
+                        src="assets/home/josh-apa.png"
+                        alt=""
+                     />
+                     <p class="card-text text-white">Josh Long Journey</p>
+                  </div>
+               </div>
+               <div
+                  class="card rounded-3"
+                  style="width: 20rem; max-width: 398px; height: 381px"
+               >
+                  <span
+                     id="testimoni"
+                     class="p-4 d-flex flex-grow-1 align-items-center"
+                     >“ Pertama kali nemu pantai yang seperti ini di kalimantan.
+                     ”</span
+                  >
+                  <div
+                     id="profile"
+                     class="card-body bg-blue-date flex-grow-0 d-flex justify-content-start align-items-center gap-2"
+                  >
+                     <img
+                        width="40px"
+                        height="40px"
+                        src="assets/home/kemal-apa.png"
+                        alt=""
+                     />
+                     <p class="card-text text-white">Marcele Adeline</p>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
 
-      <div class="bg-bfooter d-flex align-items-center justify-content-center vh-100 w-100">
-         <iframe
-            width="60%"
-            height="60%"
-            src="https://www.youtube-nocookie.com/embed/imaT5t1YSVI?start=9"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-         ></iframe>
-      </div>
+      <div
+         class="bg-footer-index d-flex align-items-center justify-content-center w-100"
+      ></div>
 
-      <!-- Optional JavaScript; choose one of the two! -->
-
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <!-- <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-         crossorigin="anonymous"
-      ></script> -->
-
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <footer-component></footer-component>
 
       <script
          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
