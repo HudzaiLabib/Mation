@@ -142,3 +142,48 @@ body {
 }
 
 /* index-end */
+
+/* akomodasi-start */
+
+.jumbotron-akomodasi {
+   background-image: url("../../assets/akomodasi/bg-snorkling-min.webp");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: 0 -100px !important;
+   height: 85vh !important;
+}
+
+.jumbotron-title {
+   font-size: 96px;
+   /* font-size: 7rem; */
+   text-transform: uppercase;
+   font-family: 'Bebas Neue';
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   line-height: 5.9rem;
+}
+
+.char {
+   transform: translateY(-115px);
+   transition: transform .5s;
+}
+
+.text-justify {
+   text-align: justify;
+}
+
+.bg-restaurant-pantai {
+   background-image: url("../../assets/akomodasi/restaurant-pantai-min.webp");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: top right;
+   /* background-attachment: fixed; */
+}
+
+.bg-footer-akomodasi {
+   background-image: url("../../assets/akomodasi/bibir-pantai-footer-min.webp");
+   background-size: cover;
+   background-position: bottom center;
+   /* background-attachment: fixed; */
+}
+
+/* akomodasi-end */
