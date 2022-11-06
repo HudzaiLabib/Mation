@@ -5,103 +5,25 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
-         href="https://fonts.googleapis.com/css2?family=Sarina&display=swap"
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
          rel="stylesheet"
-      />
-
-      <script src="include/js/jquery-3.0.0.js"></script>
-
-      <script
-         src="include/components/footer.js"
-         type="text/javascript"
-         defer
-      ></script>
-
-      <!-- Bootstrap CSS -->
-      <link
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-         rel="stylesheet"
-         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
          crossorigin="anonymous"
       />
-      <style>
-         .jumbotron-home {
-            background-image: url("assets/home/bg-header-min.webp");
-            background-size: cover;
-         }
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+         rel="stylesheet"
+      />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-         .bg-sand {
-            background-image: url("assets/home/bg-sand-min.webp");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: bottom center;
-         }
+      <link href="include/css/styles.css" type="text/css" rel="stylesheet" />
+      <link
+         href="include/css/owl.carousel.min.css"
+         type="text/css"
+         rel="stylesheet"
+      />
 
-         .bg-card {
-            background-image: url("assets/home/bg-card-min.webp");
-            background-size: cover;
-         }
-
-         .bg-beach {
-            background-image: url("assets/home/bg-beach-min.webp");
-            background-size: cover;
-            background-attachment: fixed;
-         }
-
-         .bg-tree-1 {
-            background-image: url("assets/home/tree-ornament-1-min.webp");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center right;
-            height: 800px;
-            /* margin-top: 150px; */
-            /* background-attachment: fixed; */
-         }
-
-         .bg-subs {
-            background-image: url("assets/home/subscribe-laut-min.webp");
-            background-size: cover;
-            /* background-attachment: fixed; */
-         }
-
-         .bg-footer-index {
-            background-image: url("assets/home/bg-bibir-pantai-min.webp");
-            background-size: cover;
-            background-position: bottom;
-            height: 60vh;
-            /* background-attachment: fixed; */
-         }
-
-         .bg-blue-date {
-            background-color: #00a0de;
-         }
-
-         .span-date {
-            width: 60px !important;
-            height: 45px;
-            line-height: 40px;
-            text-align: center;
-            flex-shrink: 0;
-         }
-
-         #event:hover {
-            background-color: #d3f1f9 !important;
-         }
-
-         #testimoni {
-            /* line-height: 100px; */
-            background-color: #f8f8f8;
-            text-align: center;
-            font-size: 24px;
-         }
-
-         #profile {
-            height: 100px;
-         }
-      </style>
       <title>Pantai Beras Basah</title>
    </head>
    <body>
@@ -130,21 +52,31 @@
                   <div class="mx-auto"></div>
                   <ul class="navbar-nav">
                      <li class="nav-item">
-                        <a class="nav-link text-white" href="virtual-tour.html">Virtual Tour</a>
+                        <a class="nav-link text-white" href="virtual-tour.html"
+                           >Virtual Tour</a
+                        >
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-white" href="about.html">About</a>
+                        <a class="nav-link text-white" href="about.html"
+                           >About</a
+                        >
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-white" href="akomodasi.html">Akomodasi</a>
+                        <a class="nav-link text-white" href="akomodasi.html"
+                           >Akomodasi</a
+                        >
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-white" href="rencana-perjalanan.html"
+                        <a
+                           class="nav-link text-white"
+                           href="rencana-perjalanan.html"
                            >Rencana Perjalanan</a
                         >
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link text-white" href="guide.html">Guide</a>
+                        <a class="nav-link text-white" href="guide.html"
+                           >Guide</a
+                        >
                      </li>
                   </ul>
                </div>
@@ -153,13 +85,13 @@
       </header>
 
       <!-- Banner Image  -->
-      <div
+      <section
          class="jumbotron-home w-100 d-flex flex-column justify-content-center align-items-center"
       >
          <div
             class="container d-flex align-items-center justify-content-between pt-5"
          >
-            <div class="d-grid gap-3 my-5">
+            <div id="head_text" class="d-grid gap-3 my-5">
                <h1 class="text-white fw-bold">Ayo ! Liburan di Beras Basah</h1>
                <h5 class="text-white">
                   Nikmati momen liburan besama Keluarga, teman, dan orang
@@ -173,6 +105,7 @@
             </div>
             <div class="my-5">
                <img
+                  id="unsplash"
                   width="90%"
                   src="assets/home/header-pantai-min.webp"
                   alt="suasana pantai"
@@ -188,18 +121,26 @@
                <a href=""><img src="assets/icon/icon-tiktok.png" alt="" /></a>
             </div>
             <div class="mt-3">
-               <p class="text-white fs-5 border-top border-3 border-white">
+               <p
+                  id="date"
+                  class="text-white fs-5 border-top border-3 border-white"
+               >
                   05/10/2022
                </p>
             </div>
          </div>
-      </div>
+      </section>
 
       <!-- Event -->
-      <div class="container my-5 d-grid gap-5">
+      <section
+         class="bg-white container my-5 d-grid gap-5"
+         style="z-index: 100"
+      >
          <h2 class="fs-1 fw-bold">Event 2022</h2>
          <div class="d-flex justify-content-center gap-5">
             <div
+               data-aos="fade-up"
+               data-aos-delay="100"
                class="card"
                style="min-width: 22rem; max-width: 467px; height: 470px"
             >
@@ -253,6 +194,8 @@
                </div>
             </div>
             <div
+               data-aos="fade-up"
+               data-aos-delay="200"
                class="card"
                style="min-width: 22rem; max-width: 467px; height: 470px"
             >
@@ -281,6 +224,8 @@
                </div>
             </div>
             <div
+               data-aos="fade-up"
+               data-aos-delay="300"
                class="card"
                style="min-width: 22rem; max-width: 467px; height: 470px"
             >
@@ -322,22 +267,24 @@
                </div>
             </div>
          </div>
-      </div>
+      </section>
 
       <!-- Akomodasi & Wahana -->
-      <div class="bg-sand vh-100 w-100 pt-2">
+      <section class="bg-sand vh-100 w-100 pt-2">
          <div class="container my-5 d-grid gap-5">
             <h2 class="fs-1 fw-bold">Akomodasi & Wahana</h2>
-            <div class="d-flex justify-content-center gap-5">
+            <div data-aos="fade-up" class="d-flex justify-content-center gap-5">
                <div
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/home/akomodasi-hotel-min.webp" class="card-img-top" alt="..." />
+                  <img
+                     src="assets/home/akomodasi-hotel-min.webp"
+                     class="card-img-top"
+                     alt="..."
+                  />
                   <div class="card-body">
-                     <p class="card-text fs-4 fw-bold">
-                        Hotel
-                     </p>
+                     <p class="card-text fs-4 fw-bold">Hotel</p>
                      <p class="card-text">
                         Berbagai penginapan disekitar pelabuhan...
                      </p>
@@ -347,11 +294,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/home/akomodasi-wahana-min.webp" class="card-img-top" alt="..." />
+                  <img
+                     src="assets/home/akomodasi-wahana-min.webp"
+                     class="card-img-top"
+                     alt="..."
+                  />
                   <div class="card-body">
-                     <p class="card-text fs-4 fw-bold">
-                        Wahana
-                     </p>
+                     <p class="card-text fs-4 fw-bold">Wahana</p>
                      <p class="card-text">
                         Wisata pulau dan laut yang menyenagkan...
                      </p>
@@ -361,11 +310,13 @@
                   class="card"
                   style="min-width: 22rem; max-width: 467px; height: 430px"
                >
-                  <img src="assets/home/akomodasi-restaurant-min.webp" class="card-img-top" alt="..." />
+                  <img
+                     src="assets/home/akomodasi-restaurant-min.webp"
+                     class="card-img-top"
+                     alt="..."
+                  />
                   <div class="card-body">
-                     <p class="card-text fs-4 fw-bold">
-                        Restaurant
-                     </p>
+                     <p class="card-text fs-4 fw-bold">Restaurant</p>
                      <p class="card-text">
                         Masakan lokal yang tidak kalah unik deng...
                      </p>
@@ -373,10 +324,56 @@
                </div>
             </div>
          </div>
-      </div>
+      </section>
+
+      <!-- Photos of the week -->
+      <section id="slider" class="pt-5 vh-100 d-flex align-items-center">
+         <div class="container">
+            <h1 class="text-center fw-bold">Photos Of This Week</h1>
+            <div class="slider">
+               <div class="owl-carousel">
+                  <div class="slider-card">
+                     <div
+                        class="d-flex justify-content-center align-items-center mb-4"
+                     >
+                        <img src="assets/images/slide-1-min.webp" alt="" />
+                     </div>
+                  </div>
+                  <div class="slider-card">
+                     <div
+                        class="d-flex justify-content-center align-items-center mb-4"
+                     >
+                        <img src="assets/images/slide-2-min.webp" alt="" />
+                     </div>
+                  </div>
+                  <div class="slider-card">
+                     <div
+                        class="d-flex justify-content-center align-items-center mb-4"
+                     >
+                        <img src="assets/images/slide-3-min.webp" alt="" />
+                     </div>
+                  </div>
+                  <!-- <div class="slider-card">
+                     <div
+                        class="d-flex justify-content-center align-items-center mb-4"
+                     >
+                        <img src="assets/images/slide-4.jpg" alt="" />
+                     </div>
+                  </div>
+                  <div class="slider-card">
+                     <div
+                        class="d-flex justify-content-center align-items-center mb-4"
+                     >
+                        <img src="assets/images/slide-5.jpg" alt="" />
+                     </div>
+                  </div> -->
+               </div>
+            </div>
+         </div>
+      </section>
 
       <!-- Video Profile -->
-      <div
+      <section
          class="bg-beach d-flex align-items-center justify-content-center vh-100 w-100"
       >
          <iframe
@@ -388,15 +385,15 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
          ></iframe>
-      </div>
+      </section>
 
       <!-- Subscribe -->
-      <div
+      <section
          class="bg-white d-flex align-items-center justify-content-center w-100"
       >
          <div
-            class="bg-subs p-5 m-5 rounded-3"
-            style="width: 60%; height: auto; margin-top: 150px !important"
+            class="bg-subs py-5 px-3 m-5 rounded-3"
+            style="width: 68%; height: auto; margin-top: 150px !important"
          >
             <p class="fs-1 fw-bold text-white text-center">
                Dapatkan Informasi Terkini dengan Berlangganan
@@ -404,7 +401,7 @@
             <div class="d-flex justify-content-center gap-5">
                <input
                   class="p-3 rounded-3 border-0"
-                  style="width: 70%"
+                  style="width: 60%"
                   placeholder="Enter your email..."
                   type="email"
                   name="email"
@@ -415,16 +412,18 @@
                </button>
             </div>
          </div>
-      </div>
+      </section>
 
       <!-- Testimoni -->
-      <div
+      <section
          class="bg-tree-1 d-flex align-items-end justify-content-center w-100"
       >
          <div class="container d-grid gap-5">
             <h2 class="fs-1 fw-bold">Apa Kata Mereka?</h2>
             <div class="d-flex justify-content-start gap-5">
                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
                   class="card rounded-3"
                   style="width: 20rem; max-width: 398px; height: 381px"
                >
@@ -448,6 +447,8 @@
                   </div>
                </div>
                <div
+                  data-aos="fade-up"
+                  data-aos-delay="200"
                   class="card rounded-3"
                   style="width: 20rem; max-width: 398px; height: 381px"
                >
@@ -472,6 +473,8 @@
                   </div>
                </div>
                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
                   class="card rounded-3"
                   style="width: 20rem; max-width: 398px; height: 381px"
                >
@@ -496,24 +499,36 @@
                </div>
             </div>
          </div>
-      </div>
+      </section>
 
-      <div
+      <section
          class="bg-footer-index d-flex align-items-center justify-content-center w-100"
-      ></div>
+      ></section>
 
       <footer-component></footer-component>
 
       <script
-         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
          crossorigin="anonymous"
       ></script>
+      <script src="include/js/jquery-3.0.0.js"></script>
+      <script src="include/js/owl.carousel.min.js"></script>
+      <script src="include/js/slider.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
       <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-         crossorigin="anonymous"
+         src="include/components/footer.js"
+         type="text/javascript"
+         defer
       ></script>
+      <script>
+         AOS.init({
+            // delay: 1,
+         });
+      </script>
       <script type="text/javascript">
          var nav = document.querySelector("nav");
 
@@ -523,6 +538,56 @@
             } else {
                nav.classList.remove("bg-dark", "shadow");
             }
+         });
+      </script>
+      <script>
+         gsap.registerPlugin(ScrollTrigger);
+
+         // let tl = gsap.timeline({
+         //    scrollTrigger: {
+         //       trigger: "#date",
+         //       markers: true,
+         //       start: "top center",
+         //       end: "top 100px",
+         //       scrub: true,
+         //       // toggleAction: "restart pause reverse pause"
+         //    },
+         // });
+
+         // tl.to("#unsplash", {
+         //    x: 500,
+         //    y: 300,
+         //    ease: "none",
+         // });
+
+         gsap.to("#unsplash", {
+            scrollTrigger: {
+               trigger: "#date",
+               // markers: true,
+               start: "top center",
+               end: "+=100",
+               scrub: true,
+               // toggleAction: "restart pause reverse pause"
+            },
+            x: 500,
+            y: 300,
+            opacity: 0,
+            ease: "none",
+         });
+
+         gsap.to("#head_text", {
+            scrollTrigger: {
+               trigger: "#date",
+               // markers: true,
+               start: "top center",
+               end: "+=100",
+               scrub: true,
+               // toggleAction: "restart pause reverse pause"
+            },
+            x: -500,
+            y: 300,
+            opacity: 0,
+            ease: "none",
          });
       </script>
    </body>
