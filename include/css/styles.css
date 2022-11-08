@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* font-family: 'Noto Sans HK', sans-serif; */
+  background: #fff;
+}
+
+/* index-start */
+
+.jumbotron-home {
+   background-image: url("../../assets/home/bg-header-min.webp");
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.bg-sand {
+   background-image: url("../../assets/home/bg-sand-min.webp");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+}
+
+.bg-card {
+   background-image: url("../../assets/home/bg-card-min.webp");
+   background-size: cover;
+}
+
+.bg-beach {
+   background-image: url("../../assets/home/bg-beach-min.webp");
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.bg-tree-1 {
+   background-image: url("../../assets/home/tree-ornament-1-min.webp");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center right;
+   height: 800px;
+   /* margin-top: 150px; */
+   /* background-attachment: fixed; */
+}
+
+.bg-subs {
+   background-image: url("../../assets/home/subscribe-laut-min.webp");
+   background-size: cover;
+   /* background-attachment: fixed; */
+}
+
+.bg-footer-index {
+   background-image: url("../../assets/home/bg-bibir-pantai-min.webp");
+   background-size: cover;
+   background-position: bottom;
+   height: 60vh;
+   /* background-attachment: fixed; */
+}
+
+.bg-blue-date {
+   background-color: #00a0de;
+}
+
+.span-date {
+   width: 60px !important;
+   height: 45px;
+   line-height: 40px;
+   text-align: center;
+   flex-shrink: 0;
+}
+
+#event:hover {
+   background-color: #d3f1f9 !important;
+}
+
+#testimoni {
+   /* line-height: 100px; */
+   background-color: #f8f8f8;
+   text-align: center;
+   font-size: 24px;
+}
+
+#profile {
+   height: 100px;
+}
+
+.slider {
+  margin-bottom: 30px;
+  position: relative;
+}
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.15);
+  opacity: 1;
+  background: #ff9966; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+.slider-card {
+  background: #fff;
+  padding: 0px 0px;
+  margin: 50px 15px 90px 15px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.slider-card img {
+  border-radius: 5px 5px 0px 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #ccc !important;
+  margin-left: 3px;
+  margin-right: 3px;
+  outline: none;
+}
+.owl-dots .owl-dot.active {
+  background: #f44336 !important;
+}
+
+/* index-end */
+
+/* akomodasi-start */
+
+.jumbotron-akomodasi {
+   background-image: url("../../assets/akomodasi/bg-snorkling-min.webp");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: 0 -100px !important;
+   height: 85vh !important;
+}
+
+.jumbotron-title {
+   font-size: 96px;
+   /* font-size: 7rem; */
+   text-transform: uppercase;
+   font-family: 'Bebas Neue';
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   line-height: 5.9rem;
+}
+
+.char {
+   transform: translateY(-115px);
+   transition: transform .5s;
+}
+
+.text-justify {
+   text-align: justify;
+}
+
+.bg-restaurant-pantai {
+   background-image: url("../../assets/akomodasi/restaurant-pantai-min.webp");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: top right;
+   /* background-attachment: fixed; */
+}
+
+.bg-footer-akomodasi {
+   background-image: url("../../assets/akomodasi/bibir-pantai-footer-min.webp");
+   background-size: cover;
+   background-position: bottom center;
+   /* background-attachment: fixed; */
+}
+
+/* akomodasi-end */
+
+/* about-start */
+
+.bg-tree-2 {
+   background-image: url("../../assets/about/tree-ornament-2-min.webp");
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: top right;
+   /* background-attachment: fixed; */
+}
+
+.bg-tree-3 {
+   background-image: url("../../assets/about/tree-ornament-3-min.webp");
+   background-size: inherit;
+   background-repeat: no-repeat;
+   background-position: top left;
+   /* background-attachment: fixed; */
+}
+
+.title {
+   letter-spacing: 0.3em;
+}
+
+.bg-footer-about {
+   background-image: url("../../assets/about/bg-jembatan-footer-min.webp");
+   background-size: cover;
+   background-position: bottom center;
+   /* background-attachment: fixed; */
+}
+
+.zoom-image {
+   overflow: hidden;
+}
+
+.zoom-image img {
+   /* width: 100%; */
+   /* height: 100%; */
+   /* object-fit: cover; */
+   transition: all .3s ease;
+ }
+ 
+ .zoom-image img:hover {
+   transform: scale(1.5);
+ }
+/* about-end */
+
+/* guide-start */
+
+.bg-beach-guide {
+   background-image: url("../../assets/guide/bg-beach-guide.webp");
+   background-size: cover;
+   background-position: bottom;
+   height: 100vh;
+}
+
+.form-control {
+
+   height: 40px;
+   background-color: #eeeeee69;
+}
+
+.form-control:focus {
+   background-color: #eeeeee69;
+   box-shadow: none;
+   border-color: #eee;
+}
+
+/* guide-end */
+
+/* guide-start */
+
+.bg-camp {
+   background-image: url("../../assets/rencana perjalanan/bg-camp-tour.webp");
+   background-size: cover;
+   background-position: bottom;
+   height: 60vh;
+}
+
+.bg-car {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/rencana perjalanan/bg-car-tour.webp");
+   background-size: cover;
+   height: 100vh;
+}
+
+/* guide-end */
