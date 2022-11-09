@@ -232,3 +232,43 @@ body {
    transform: scale(1.5);
  }
 /* about-end */
+
+/* guide-start */
+
+.bg-beach-guide {
+   background-image: url("../../assets/guide/bg-beach-guide.webp");
+   background-size: cover;
+   background-position: bottom;
+   height: 100vh;
+}
+
+.form-control {
+
+   height: 40px;
+   background-color: #eeeeee69;
+}
+
+.form-control:focus {
+   background-color: #eeeeee69;
+   box-shadow: none;
+   border-color: #eee;
+}
+
+/* guide-end */
+
+/* guide-start */
+
+.bg-camp {
+   background-image: url("../../assets/rencana perjalanan/bg-camp-tour.webp");
+   background-size: cover;
+   background-position: bottom;
+   height: 60vh;
+}
+
+.bg-car {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/rencana perjalanan/bg-car-tour.webp");
+   background-size: cover;
+   height: 100vh;
+}
+
+/* guide-end */
