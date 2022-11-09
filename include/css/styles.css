@@ -69,6 +69,11 @@ body {
    flex-shrink: 0;
 }
 
+img#icon {
+   width:24px;
+   height:24px;
+}
+
 #event:hover {
    background-color: #d3f1f9 !important;
 }
