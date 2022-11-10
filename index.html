@@ -150,7 +150,7 @@
 
       <!-- Event -->
       <section
-         class="bg-white container my-5 d-grid gap-5"
+         class="overflow-hidden bg-white container my-5 d-grid gap-5"
          style="z-index: 100"
       >
          <h2 class="fs-1 fw-bold">Event 2022</h2>
@@ -287,7 +287,7 @@
       </section>
 
       <!-- Akomodasi & Wahana -->
-      <section class="bg-sand vh-100 w-100 pt-2">
+      <section class="overflow-hidden bg-sand vh-100 w-100 pt-2">
          <div class="container my-5 d-grid gap-5">
             <h2 class="fs-1 fw-bold">Akomodasi & Wahana</h2>
             <div data-aos="fade-up" class="d-flex justify-content-center gap-5">
@@ -440,7 +440,7 @@
 
       <!-- Testimoni -->
       <section
-         class="bg-tree-1 d-flex align-items-end justify-content-center w-100"
+         class="overflow-hidden bg-tree-1 d-flex align-items-end justify-content-center w-100"
       >
          <div class="container d-grid gap-5">
             <h2 class="fs-1 fw-bold">Apa Kata Mereka?</h2>
@@ -567,23 +567,6 @@
       <script>
          gsap.registerPlugin(ScrollTrigger);
 
-         // let tl = gsap.timeline({
-         //    scrollTrigger: {
-         //       trigger: "#date",
-         //       markers: true,
-         //       start: "top center",
-         //       end: "top 100px",
-         //       scrub: true,
-         //       // toggleAction: "restart pause reverse pause"
-         //    },
-         // });
-
-         // tl.to("#unsplash", {
-         //    x: 500,
-         //    y: 300,
-         //    ease: "none",
-         // });
-
          gsap.to("#unsplash", {
             scrollTrigger: {
                trigger: "#date",
@@ -596,6 +579,7 @@
             x: 500,
             y: 300,
             opacity: 0,
+            display: "none",
             ease: "none",
          });
 
@@ -611,6 +595,7 @@
             x: -500,
             y: 300,
             opacity: 0,
+            display: "none",
             ease: "none",
          });
       </script>
