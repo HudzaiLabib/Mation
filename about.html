@@ -11,10 +11,16 @@
          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
          crossorigin="anonymous"
       />
-      
+      <link
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+         rel="stylesheet"
+      />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
       <link href="include/css/styles.css" type="text/css" rel="stylesheet" />
 
       <title>About - Pantai Beras Basah</title>
+      <link rel="icon" type="image/x-icon" href="assets/icon-tab.png">
    </head>
    <body>
       <!-- Navbar  -->
@@ -117,6 +123,8 @@
             <div class="d-flex justify-content-center align-items-center gap-3">
                <div class="zoom-image">
                   <img
+                  data-aos="fade-up"
+               data-aos-delay="100"
                      width="250px"
                      src="assets/about/beach-overview-min.webp"
                      alt=""
@@ -124,6 +132,8 @@
                </div>
                <div class="zoom-image">
                   <img
+                  data-aos="fade-up"
+               data-aos-delay="200"
                      width="250px"
                      src="assets/about/beach-overview-1-min.webp"
                      alt=""
@@ -131,6 +141,8 @@
                </div>
                <div class="zoom-image">
                   <img
+                  data-aos="fade-up"
+               data-aos-delay="300"
                      width="250px"
                      src="assets/about/beach-overview-2-min.webp"
                      alt=""
@@ -139,6 +151,8 @@
             </div>
             <div class="zoom-image my-3 d-flex justify-content-center align-items-center">
                <img
+               data-aos="fade-up"
+               data-aos-delay="400"
                   width="780px"
                   src="assets/about/beach-overview-3-min.webp"
                   alt=""
@@ -170,11 +184,17 @@
          crossorigin="anonymous"
       ></script>
       <script src="include/js/jquery-3.0.0.js"></script>
-      <script
-         src="include/components/footer.js"
-         type="text/javascript"
-         defer
-      ></script>
+      <script src="include/js/owl.carousel.min.js"></script>
+      <script src="include/js/slider.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init({
+            // delay: 1,
+         });
+      </script>
+      
       <script
          src="include/components/header.js"
          type="text/javascript"

@@ -159,7 +159,7 @@ img#icon {
 }
 
 .jumbotron-title {
-   font-size: 96px;
+   font-size: 72px;
    /* font-size: 7rem; */
    text-transform: uppercase;
    font-family: 'Bebas Neue';
@@ -264,14 +264,14 @@ img#icon {
 /* guide-start */
 
 .bg-camp {
-   background-image: url("../../assets/rencana perjalanan/bg-camp-tour.webp");
+   background-image: url("../../assets/rencana-perjalanan/bg-camp-tour.webp");
    background-size: cover;
    background-position: bottom;
    height: 60vh;
 }
 
 .bg-car {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/rencana perjalanan/bg-car-tour.webp");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/rencana-perjalanan/bg-car-tour.webp");
    background-size: cover;
    height: 100vh;
 }
